@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Calculator</title>
+    <style>
+        #container{
+            width: 40%;
+            text-align: center;
+            font-size: 20px;
+            margin: auto;
+            color: teal;
+        }
+        #card{
+            padding-top: 30px;
+            margin: auto;
+            background-color: transparent;
+            width: 330px;
+            height: 350px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;        }
+        input{
+            outline: 0;
+            position: relative;
+            left: 30px;
+            top: 10px;
+            border: 0;
+            color: black;
+            background-color: transparent;
+            width: 60px;
+            height: 50px;
+            float: left;
+            margin: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;            border-radius: 8px;
+        }
+        .operator{
+            background-color: black;
+            position: relative;
+            border-radius: 8px;
+            color: white;
+        }
+
+
+        #clear{
+            float: left;
+            position: relative;
+            display: block;
+            background-color: red;
+            margin-bottom: 15px;
+        }
+        #display-op>div{
+            width: 41px;
+            border: 0;
+            height: 50px;
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;            margin: auto;
+            margin-bottom: 30px;
+            padding: 0px 90px 0px 90px;
+            border-radius: 8px;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Masai Calculator</h1>
+    </div>
+    <div id="card">
+        <div id="display-op">
+            <div></div>
+        </div>
+        <div>
+            
+            <input type="button" value="1">
+            <input type="button" value="2">
+            <input type="button" value="3">
+            <input type="button" class="operator" value="+">
+            <br>
+            <input type="button" value="4">
+            <input type="button" value="5">
+            <input type="button" value="6">
+            <input type="button" class="operator" value="-">
+             <br>
+             <input type="button" value="7">
+             <input type="button" value="8">
+             <input type="button" value="9"> 
+             <input type="button" class="operator" value="*" >
+             <br>
+             <input type="button" id="clear" name="clear" value=" C ">
+             <input type="button" value="0">
+             <input type="button" class="operator" value=" = ">
+             <input type="button" class="operator" value="/">
+             <br>
+        </div>
+        
+    </div>
+
+</body>
+</html>
